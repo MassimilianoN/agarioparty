@@ -1,11 +1,12 @@
 ---
 applications:
-- name: agarioparty
+- name: agarioparty2258
   memory: 512M
   disk_quota: 1G
   buildpack: nodejs_buildpack
-  host: agarioparty
+  host: agarioparty2258
   domain: mybluemix.net
+  command: node server/server.js
   timeout: 180
   env:
-    NPM_CONFIG_PRODUCTION: false
+    env_type: production
